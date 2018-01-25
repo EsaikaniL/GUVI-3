@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() 
+{
+	int t,k,i,a[5],temp;
+	scanf("%d %d",&t,&k);
+	for(i=0;i<t;i++)
+	{
+	scanf("%d",&a[i]);
+	}
+	for(i=0;i<t;i++)
+	{
+	if(a[i]>a[i+1])
+	{
+	temp=a[i];
+	a[i]=a[i+1];
+	a[i+1]=temp;
+	}
+	}
+	printf("%d",a[k-1]);
+	getch();
+}
